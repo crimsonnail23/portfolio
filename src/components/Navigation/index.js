@@ -11,15 +11,19 @@ function Navigation(props){
     return(
         <nav>
             {
-                sections.map((section)=>{
+                sections.map((section)=>(
                     <li className={ ` ${currentSection.name===section.name}`}
                     key={section.name}
                     >
-                        <span>
+                        <span
+                            onClick={()=>{
+                                setCurrentSection(section);
+                            }}
+                        >
                             
                         </span>
                     </li>
-                })
+                ))
             }
         </nav>
     )
