@@ -26,14 +26,14 @@ function App() {
   return (
   <div>
     <main>
-    <Header>
+      <Header></Header>
       <Navigation
         sections={sections}
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
       > 
       </Navigation>
-      </Header>
+      
     <About></About>
     <Footer></Footer>
     </main>
