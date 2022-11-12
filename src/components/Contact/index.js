@@ -55,6 +55,13 @@ function Contact() {
                     <label htmlFor="message">Message</label>
                     <input type="text" name="message" defaultValue={message} onBlur={handleChange}/>
                 </div>
+                {
+                    errorMessage &&
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                }
+                <button type="submit">Submit</button>
             </form>
 
           <div className="row"></div>
