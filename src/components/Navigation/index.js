@@ -1,30 +1,33 @@
 import React from 'react';
 
-function Navigation(props){
+function Navigation({handlePageChange}){
 
-    const{
-        sections=[],
-        setCurrentSection,
-        currentSection
-    }=props
+    
 
     return(
         <nav>
-            {
-                sections.map((section)=>(
-                    <li className={ ` ${currentSection.name===section.name}`}
-                    key={section.name}
-                    >
-                        <span
-                            onClick={()=>{
-                                setCurrentSection(section);
-                            }}
-                        >
-                            
-                        </span>
-                    </li>
-                ))
-            }
+            <ul>
+                <li>
+                    <a href="#about" onClick={()=>handlePageChange('about')}>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" onClick={()=>handlePageChange('portfolio')}>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" onClick={()=>handlePageChange('contact')}>
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume" onClick={()=>handlePageChange('resume')}>
+                        Resume
+                    </a>
+                </li>
+            </ul>
         </nav>
     )
 }

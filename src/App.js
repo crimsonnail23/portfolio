@@ -1,42 +1,42 @@
-import React, {useState} from 'react';
-import About from './components/About';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation'
+import React, { useState } from "react";
+import About from "./components/About";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
-
-  const [sections]=useState([
-    {
-      name: 'About Me'
-    },
-    {
-      name: 'Portfolio'
-    },
-    {
-      name: 'Contact'
-    },
-    {
-      name: 'Resume'
+  const [currentPage, setCurrentPage] = useState("about");
+  const renderPage = () => {
+    if (currentPage === "about") {
+      return <About />;
+    } else if (currentPage === "portfolio") {
+      return <Portfolio />;
+    } else if (currentPage === "contact") {
+      return <Contact />;
+    } else if (currentPage === "resume") {
+      return <Resume />;
+    } else {
+      return <About />;
     }
-  ])
-
-  const [currentSection, setCurrentSection]=useState(sections[0])
-
+  };
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
   return (
-  <div>
-    <main>
-      <Header></Header>
-      <Navigation
-        sections={sections}
-        setCurrentSection={setCurrentSection}
-        currentSection={currentSection}
-      > 
-      </Navigation>
-      
-    <About></About>
-    <Footer></Footer>
-    </main>
+    <div>
+      <main>
+        <Header></Header>
+        <Navigation
+          handlePageChange={handlePageChange}
+          currentPage={currentPage}
+        ></Navigation>
+
+        {renderPage()}
+        <Footer></Footer>
+      </main>
     </div>
   );
 }
