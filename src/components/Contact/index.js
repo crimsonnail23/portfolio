@@ -40,8 +40,23 @@ function Contact() {
     <div className="container">
       <div className="row">
         <div className="col-md-12">
-          <h2>Contact</h2>
-          <hr />
+          <h2>If You Wish To Contact Me:</h2>
+          
+            <form id="contact-form" onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+                </div>
+                <div>
+                    <label htmlFor="email">Email Address</label>
+                    <input type="text" name="email" defaultValue={email} onBlur={handleChange}/>
+                </div>
+                <div>
+                    <label htmlFor="message">Message</label>
+                    <input type="text" name="message" defaultValue={message} onBlur={handleChange}/>
+                </div>
+            </form>
+
           <div className="row"></div>
         </div>
       </div>
