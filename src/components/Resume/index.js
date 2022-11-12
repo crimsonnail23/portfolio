@@ -5,7 +5,7 @@ function Resume(){
         <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h2>resume</h2>
+            <h2>Resume</h2>
             <hr />
             <div className="row"></div>
           </div>

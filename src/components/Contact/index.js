@@ -49,11 +49,11 @@ function Contact() {
                 </div>
                 <div>
                     <label htmlFor="email">Email Address</label>
-                    <input type="text" name="email" defaultValue={email} onBlur={handleChange}/>
+                    <input type="text" name="email"  defaultValue={email} onBlur={handleChange}/>
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
-                    <input type="text" name="message" defaultValue={message} onBlur={handleChange}/>
+                    <input id="message-input" type="text" name="message" size="50" height="200px" defaultValue={message} onBlur={handleChange}/>
                 </div>
                 {
                     errorMessage &&

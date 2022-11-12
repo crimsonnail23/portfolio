@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
 function App() {
+  document.title="Younus Y. Seddiq's Homepage";
   const [currentPage, setCurrentPage] = useState("about");
   const renderPage = () => {
     if (currentPage === "about") {
