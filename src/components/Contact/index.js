@@ -43,17 +43,17 @@ function Contact() {
           <h2>If You Wish To Contact Me:</h2>
           
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name</label>
+                <div className="contact-div">
+                    <label className="contact-label" htmlFor="name">Name</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor="email">Email Address</label>
+                <div className="contact-div">
+                    <label className="contact-label" htmlFor="email">Email Address</label>
                     <input type="text" name="email"  defaultValue={email} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor="message">Message</label>
-                    <input id="message-input" type="text" name="message" size="50" height="200px" defaultValue={message} onBlur={handleChange}/>
+                <div className="contact-div">
+                    <label className="contact-label" htmlFor="message">Message</label>
+                    <textarea id="message-input" type="text" name="message" rows="10" cols="20" defaultValue={message} onBlur={handleChange}/>
                 </div>
                 {
                     errorMessage &&

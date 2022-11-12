@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
-#message-label{
-  height: 200px
+.contact-div{
+  margin: 10px;
+}
+.contact-label{
+  margin: 10px;
 }
