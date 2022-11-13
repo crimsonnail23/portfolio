@@ -9,12 +9,18 @@ function Resume(){
             <ul>Front End Proficiencies
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>Javascript</li>
                 <li>Bootstrap</li>
                 <li>React</li>
                 <li>Materialize</li>
             </ul>
             <ul>Backend Proficiens
                 <li>MySQL</li>
+                <li>Sequelize</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Express</li>
+                <li>Node.js</li>
             </ul>
             <div className="row"></div>
           </div>
