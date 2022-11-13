@@ -1,12 +1,14 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 import password from "../../assets/images/screenshots/password-screenshot.jpg";
+
 
 //make an array of objects for each project
 function Portfolio() {
   const projectArray = [
     {
       id: 1,
-      name: "project 1",
+      name: "Password Generator",
       deployLink: "",
       github: "",
       image: password,
@@ -17,7 +19,7 @@ function Portfolio() {
       name: "project 2",
       deployLink: "",
       github: "",
-      image: password,
+      image: '',
       description: "",
     },
     {
@@ -25,7 +27,7 @@ function Portfolio() {
       name: "project 3",
       deployLink: "",
       github: "",
-      image: password,
+      image: '',
       description: "",
     },
     {
@@ -33,7 +35,7 @@ function Portfolio() {
       name: "project 4",
       deployLink: "",
       github: "",
-      image: password,
+      image: '',
       description: "",
     },
     {
@@ -41,7 +43,7 @@ function Portfolio() {
       name: "project 5",
       deployLink: "",
       github: "",
-      image: password,
+      image: '',
       description: "",
     },
     {
@@ -49,7 +51,7 @@ function Portfolio() {
       name: "project 6",
       deployLink: "",
       github: "",
-      image: password,
+      image: '',
       description: "",
     },
   ];
@@ -64,13 +66,13 @@ function Portfolio() {
           <div className="row">
             {projectArray.map((project) => {
               return (
-                <div className="card" key={project.id}>
-                  <div className="card-body">
-                    <div className="text-center">
-                        {project.name}
-                    </div>
-                  </div>
-                </div>
+                <Card key={project.id}>
+                  <Card.Body>
+                    <Card.Title>{project.name}</Card.Title>
+                    <Card.Img src={project.image} width="500"/>
+
+                  </Card.Body>
+                </Card>
               );
             })}
           </div>

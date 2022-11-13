@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {validateEmail} from '../../utils/helpers'
+import Form from 'react-bootstrap/Form'
 
 function Contact() {
     const[formState,setFormState] =useState({name:'', email: '', message:''});
@@ -42,19 +43,19 @@ function Contact() {
         <div className="col-md-12">
           <h2>If You Wish To Contact Me:</h2>
           
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div className="contact-div">
-                    <label className="contact-label" htmlFor="name">Name</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
-                </div>
-                <div className="contact-div">
-                    <label className="contact-label" htmlFor="email">Email Address</label>
+            <Form id="contact-form" onSubmit={handleSubmit}>
+                <Form.Group className="contact-div">
+                    <Form.Label className="contact-label" htmlFor="name">Name</Form.Label>
+                    <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+                </Form.Group>
+                <Form.Group className="contact-div">
+                    <Form.Label className="contact-label" htmlFor="email">Email Address</Form.Label>
                     <input type="text" name="email"  defaultValue={email} onBlur={handleChange}/>
-                </div>
-                <div className="contact-div">
-                    <label className="contact-label" htmlFor="message">Message</label>
+                </Form.Group>
+                <Form.Group className="contact-div">
+                    <Form.Label className="contact-label" htmlFor="message">Message</Form.Label>
                     <textarea id="message-input" type="text" name="message" rows="10" cols="20" defaultValue={message} onBlur={handleChange}/>
-                </div>
+                </Form.Group>
                 {
                     errorMessage &&
                     <div>
@@ -62,7 +63,7 @@ function Contact() {
                     </div>
                 }
                 <button type="submit">Submit</button>
-            </form>
+            </Form>
 
           <div className="row"></div>
         </div>
