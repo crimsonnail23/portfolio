@@ -70,7 +70,7 @@ function Portfolio() {
                   <Card.Body>
                     <Card.Title>{project.name}</Card.Title>
                     <Card.Img src={project.image} width="500"/>
-
+                    
                   </Card.Body>
                 </Card>
               );

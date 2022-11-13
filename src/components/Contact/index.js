@@ -43,10 +43,10 @@ function Contact() {
         <div className="col-md-12">
           <h2>If You Wish To Contact Me:</h2>
           
-            <Form id="contact-form" onSubmit={handleSubmit}>
-                <Form.Group className="contact-div">
-                    <Form.Label className="contact-label" htmlFor="name">Name</Form.Label>
-                    <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Label >Name</Form.Label>
+                    <Form.Control name="name" defaultValue={name} onBlur={handleChange}/>
                 </Form.Group>
                 <Form.Group className="contact-div">
                     <Form.Label className="contact-label" htmlFor="email">Email Address</Form.Label>
