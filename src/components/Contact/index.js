@@ -44,17 +44,17 @@ function Contact() {
           <h2>If You Wish To Contact Me:</h2>
           
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Group className="mb-3" >
                     <Form.Label >Name</Form.Label>
-                    <Form.Control name="name" defaultValue={name} onBlur={handleChange}/>
+                    <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange}/>
                 </Form.Group>
-                <Form.Group className="contact-div">
-                    <Form.Label className="contact-label" htmlFor="email">Email Address</Form.Label>
-                    <input type="text" name="email"  defaultValue={email} onBlur={handleChange}/>
+                <Form.Group className="mb-3">
+                    <Form.Label  htmlFor="email">Email Address</Form.Label>
+                    <Form.Control type="text" name="email"  defaultValue={email} onBlur={handleChange}/>
                 </Form.Group>
                 <Form.Group className="contact-div">
                     <Form.Label className="contact-label" htmlFor="message">Message</Form.Label>
-                    <textarea id="message-input" type="text" name="message" rows="10" cols="20" defaultValue={message} onBlur={handleChange}/>
+                    <Form.Control as="textarea" id="message-input" type="text" name="message" rows="10" cols="20" defaultValue={message} onBlur={handleChange}/>
                 </Form.Group>
                 {
                     errorMessage &&

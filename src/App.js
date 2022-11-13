@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   document.title="Younus Y. Seddiq's Homepage";
