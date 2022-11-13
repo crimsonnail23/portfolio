@@ -9,8 +9,15 @@ import Resume from "./components/Resume";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
+
+  //changes title of site.
   document.title="Younus Y. Seddiq's Homepage";
+
+  //sets page to these two states, currentPage and setCurrentPage.
   const [currentPage, setCurrentPage] = useState("about");
+
+  //the page that renders will be the one that the user clicks on. if they click on About, then that's the the page that will render.
+  //if they click on portfolio, then that's the page that will render. it will default to render the About page.
   const renderPage = () => {
     if (currentPage === "about") {
       return <About />;

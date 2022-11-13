@@ -1,6 +1,6 @@
 import React from 'react';
 import profilePic from '../../assets/images/profile.jpg'
-
+//this page will feature basic information about me.
 function About(){
     return(
         <section>

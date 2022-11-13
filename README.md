@@ -10,6 +10,7 @@ a single page application can be very useful because it will create less strain 
 # sites
 
 deployed application:
+https://crimsonnail23.github.io/portfolio/ 
 
 GitHub Repo:
 https://github.com/crimsonnail23/portfolio

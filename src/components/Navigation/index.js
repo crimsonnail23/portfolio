@@ -3,10 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+//this page will be the navigation element that will render on every page.
+
 function Navigation({handlePageChange}){
 
-    
-
+ // onClick event will trigger the handlePageChange functionw which will then change the page depending on what the user clicked.
     return(
         
         <Navbar bg="dark" variant="dark">

@@ -1,5 +1,5 @@
 import React from 'react'
-
+//this page will feature information on my various skill sets.
 function Resume(){
     return(
         <div className="container">

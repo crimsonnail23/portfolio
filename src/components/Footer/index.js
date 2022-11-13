@@ -1,5 +1,5 @@
 import React from 'react'
-
+//this footer will render on every page.
 function Footer(){
     return(
     <section>

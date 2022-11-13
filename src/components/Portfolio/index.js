@@ -7,8 +7,10 @@ import quiz from "../../assets/images/screenshots/quiz-screenshot-1.jpg";
 import planner from "../../assets/images/screenshots/daily-planner-screenshot-01.jpg";
 import dream from "../../assets/images/screenshots/dream-or-nightmare-screenshot.png";
 
-//make an array of objects for each project
+//this page will feature a handful of projects i worked on over the past few months.
+
 function Portfolio() {
+  //made an array of objects for each project, that will be looped through map() and then render with the correct information.
   const projectArray = [
     {
       id: 1,
@@ -74,10 +76,12 @@ function Portfolio() {
 
           <hr />
           <div className="row">
+            {/* this will loop over the project array put the new data into the project argument. */}
             {projectArray.map((project) => {
               return (
                 <Card key={project.id}>
                   <Card.Body>
+                    {/* here is where the object information gets pulled to */}
                     <Card.Title>{project.name}</Card.Title>
                     <Card.Img src={project.image} width="500" alt={project.alt}/>
                     <Card.Text>{project.description}</Card.Text>
