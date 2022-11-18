@@ -6,6 +6,7 @@ import textEditor from "../../assets/images/screenshots/pwa-text-editor-screensh
 import quiz from "../../assets/images/screenshots/quiz-screenshot-1.jpg";
 import planner from "../../assets/images/screenshots/daily-planner-screenshot-01.jpg";
 import dream from "../../assets/images/screenshots/dream-or-nightmare-screenshot.png";
+import restaurant from "../../assets/images/screenshots/restaurant.png"
 
 //this page will feature a handful of projects i worked on over the past few months.
 
@@ -66,6 +67,15 @@ function Portfolio() {
       description: "This is an application where users can post their dreams and other users can upvote or downvote them.",
       alt:'screenshot of Dream or Nightmare application'
     },
+    {
+      id: 7,
+      name: "Restaurant Review",
+      deployLink: "https://shrouded-taiga-00254.herokuapp.com/",
+      github: "https://github.com/dnecia/Restaraunt-Reviews/tree/dee",
+      image: restaurant,
+      description: "This is an application where users can post their reviews of restaurants",
+      alt:'screenshot of Restaurant Review application'
+    }
   ];
 
   return (
