@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.74af2817.css",
-    "main.js": "/portfolio/static/js/main.f11fd485.js",
+    "main.js": "/portfolio/static/js/main.664765c2.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/restaurant.png": "/portfolio/static/media/restaurant.234d8645efc705ef90f9.png",
     "static/media/daily-planner-screenshot-01.jpg": "/portfolio/static/media/daily-planner-screenshot-01.5be73d97b9897f63fc41.jpg",
     "static/media/note-taker-screenshot-02.jpg": "/portfolio/static/media/note-taker-screenshot-02.56dc3f4c120b20bacd3f.jpg",
     "static/media/quiz-screenshot-1.jpg": "/portfolio/static/media/quiz-screenshot-1.8ebf72d069c7e7787e6e.jpg",
@@ -12,11 +13,11 @@
     "static/media/dream-or-nightmare-screenshot.png": "/portfolio/static/media/dream-or-nightmare-screenshot.cf5c405d6dc2b36dd666.png",
     "index.html": "/portfolio/index.html",
     "main.74af2817.css.map": "/portfolio/static/css/main.74af2817.css.map",
-    "main.f11fd485.js.map": "/portfolio/static/js/main.f11fd485.js.map",
+    "main.664765c2.js.map": "/portfolio/static/js/main.664765c2.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74af2817.css",
-    "static/js/main.f11fd485.js"
+    "static/js/main.664765c2.js"
   ]
 }
